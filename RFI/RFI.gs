@@ -3,7 +3,7 @@
  */
 
 // Form URL
-var formURL = 'https://docs.google.com/forms/d/1HR4qT7i26D4U4oSSQ6ooOoGRpjH5_o6d-4QlJtFTU28/viewform';
+var formURL = 'https://docs.google.com/forms/d/1xxxxxxxxxxxxxxxxxxxxxxx/viewform';
 // Sheet name used as destination of the form responses
 var sheetName = 'Form Responses 1';
 /*
@@ -54,7 +54,7 @@ function getEditResponseUrls(){
           editResponseUrl = editResponseUrl + "&"+prefillname_ID+"="+id_existing;
         }
       //make response URL
-      //https://docs.google.com/forms/d/e/1FAIpQLSfsyPYxu-QBjWI9G9xVvfXG_kTWo5QrzQttiEzNH2KwumYiBQ/viewform?edit2=2_ABaOnud8RvP7GhRnj6UGis4MHqYI9_Xo6XOhXfWxJkmYe7bbKHiHLYUCUJb3Jw&entry.357851482=H30
+      //https://docs.google.com/forms/d/e/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx/viewform?edit2=2_yyyyyyyyyyyyyyyyyyyy.357851482=H30
       sheet.getRange(i+1, columnIndex+1).setValue(editResponseUrl);
       //Logger.log('sendEmailsapp ran!'+editResponseUrl);
       //  
@@ -103,7 +103,7 @@ function getEditResponseUrl_forActiveRow(){
           editResponseUrl = editResponseUrl + "&"+prefillname_ID+"="+id_existing;
         }
       //make response URL
-      //https://docs.google.com/forms/d/e/1FAIpQLSfsyPYxu-QBjWI9G9xVvfXG_kTWo5QrzQttiEzNH2KwumYiBQ/viewform?edit2=2_ABaOnud8RvP7GhRnj6UGis4MHqYI9_Xo6XOhXfWxJkmYe7bbKHiHLYUCUJb3Jw&entry.357851482=H30
+      //https://docs.google.com/forms/d/e/1xxxxxxxxxxxx/viewform?edit2=2_yyyyyyyyyyyyyyyyyyyy&entry.357851482=H30
       activeSheet.getRange(activeRowIndex, columnIndex_EditUrl+1).setValue(editResponseUrl);
       //
     } //if     
@@ -133,17 +133,17 @@ function onOpen() {
 // dev: andrewroberts.net
 
 // Replace this with ID of your template document.
-var TEMPLATE_ID = '1P4QQyS8MuyLaUH4BAstuaMG4PkVxl71-K6Hul7gL4x8';
-//https://docs.google.com/document/d/1P4QQyS8MuyLaUH4BAstuaMG4PkVxl71-K6Hul7gL4x8/edit
-//https://docs.google.com/document/d/1P4QQyS8MuyLaUH4BAstuaMG4PkVxl71-K6Hul7gL4x8/edit?usp=drive_web - 
-// var TEMPLATE_ID = '1wtGEp27HNEVwImeh2as7bRNw-tO4HkwPGcAsTrSNTPc' // Demo template
+var TEMPLATE_ID = '1xxxxxxxxxxxxxxxxxxxxxxxL4x8';
+//https://docs.google.com/document/d/1Pxxxxxxxxxxxxxxxxxxxxx8/edit
+//https://docs.google.com/document/d/1P4xxxxxxxxxxxxxxxxL4x8/edit?usp=drive_web - 
+// var TEMPLATE_ID = '1wtGEpxxxxxxxxxxkwPGcAsTrSNTPc' // Demo template
 // Demo script - http://bit.ly/createPDF 
 // You can specify a name for the new PDF file here, or leave empty to use the 
 // name of the template.
 var PDF_FILE_NAME = ''; //dynamically generated
 var PDF_FOLDER_NAME = 'RFI_PDF_Output';
-var PDF_dir_id = '0B9RbVk3syuU0ZGQ2YUdka0k0RGc';
-//https://drive.google.com/drive/folders/0B9RbVk3syuU0ZGQ2YUdka0k0RGc?usp=sharing
+var PDF_dir_id = '0xxxxxxxxxxxk0RGc';
+//https://drive.google.com/drive/folders/0B9xxxxxxxxxxxxxxxxxxxxxxRGc?usp=sharing
 var dir = DriveApp.getFoldersByName(PDF_FOLDER_NAME).next();
 
 //SpreadsheetApp.getUi().alert('dir--'+dir)
